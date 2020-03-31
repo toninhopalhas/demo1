@@ -19,16 +19,32 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -45,7 +61,7 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
-            <version>3.3.5</version>
+            <version>4.4.1</version>
         </dependency>
 
         <dependency>
@@ -54,7 +70,16 @@
             <version>3.4.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-spring-boot-bom</artifactId>
+            <version>0.1.8</version>
+            <type>pom</type>
+        </dependency>
+
     </dependencies>
+
+
 
     <build>
         <plugins>
