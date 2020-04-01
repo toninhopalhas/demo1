@@ -27,16 +27,6 @@
         <jar>${project.build.directory}/${project.build.finalName}.jar</jar>
     </properties>
 
-    <build>
-        <plugins>
-        <plugin>
-            <groupId>com.microsoft.azure</groupId>
-            <artifactId>azure-webapp-maven-plugin</artifactId>
-            <version>1.9.0</version>
-        </plugin>
-        </plugins>
-    </build>
-         
     <dependencies>
 
         <dependency>
