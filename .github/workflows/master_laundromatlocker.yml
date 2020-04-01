@@ -18,7 +18,7 @@ jobs:
     - name: Set up Java version
       uses: actions/setup-java@v1
       with:
-        java-version: '11'
+        java-version: '8'
 
     - name: Build with Maven
       run: mvn clean install
@@ -28,5 +28,5 @@ jobs:
       with:
         app-name: 'laundromatlocker'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e198b992b4914f72b5ae3d98665b2c3e }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_387a2cf31a1b4f9aae0a6c586bda6dbd }}
         package: '${{ github.workspace }}/target/*.jar'
