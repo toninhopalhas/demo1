@@ -28,5 +28,5 @@ jobs:
       with:
         app-name: 'laundromatlocker'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_387a2cf31a1b4f9aae0a6c586bda6dbd }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_5299d79c031f4d9a96b97b83ac5e2f2b }}
         package: '${{ github.workspace }}/target/*.jar'
